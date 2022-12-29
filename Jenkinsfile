@@ -16,7 +16,8 @@ pipeline {
        
         stage('CRun Python Code') {
             steps {
-                 sh 'python hello.py'
+//                  sh 'python hello.py'
+                sh -c 'echo "Hello, world!"'
             }
         }
         
